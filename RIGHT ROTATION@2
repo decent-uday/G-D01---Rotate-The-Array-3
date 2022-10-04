@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+     int n,k;
+    scanf("%d",&n);
+    int a[n];
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    scanf("%d",&k);
+ 
+    k=k%n;
+     for(int i=0;i<n;i++)
+    {
+        if(i<k)
+            printf("%d ",a[(n+i)-(k)]);
+         else
+             printf("%d ",a[i-(k)]);
+    }
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
